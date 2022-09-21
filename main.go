@@ -39,12 +39,3 @@ func init() {
 	}
 }
 
-accountSid = os.Getenv("ACCOUNT_SID")
-	authToken = os.Getenv("AUTH_TOKEN")
-	fromPhone = os.Getenv("FROM_PHONE")
-	toPhone = os.Getenv("TO_PHONE")
-
-	client = twilio.NewRestClientWithParams(twilio.RestClientParams{
-		Username: accountSid,
-		Password: authToken,
-	})
