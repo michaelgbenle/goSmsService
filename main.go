@@ -22,4 +22,6 @@ func SendMessage(msg string) {
 	params.SetTo(toPhone)
 	params.SetFrom(fromPhone)
 	params.SetBody(msg)
+
+	response, err := client.ApiV2010.CreateMessage(&params)
 }
