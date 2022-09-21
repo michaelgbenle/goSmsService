@@ -16,3 +16,5 @@ var (
 	toPhone string
 	client *twilio.RestClient
 )
+
+func SendMessage(msg string) {
