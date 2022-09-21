@@ -37,3 +37,4 @@ func init() {
 		fmt.Printf("error loading .env: %s\n", err.Error())
 		os.Exit(1)
 	}
+}
