@@ -52,7 +52,7 @@ func init() {
 
 func main() {
 
-	msg := fmt.Sprintf(os.Getenv("MSG"), "James")
+	msg := fmt.Sprintf(os.Getenv("MSG"), "sapiens")
 	SendMessage(msg)
 	
 }
