@@ -17,4 +17,4 @@ var (
 	client *twilio.RestClient
 )
 
-func SendMessage(msg string) {
+func SendMessage(msg string) {}
