@@ -30,3 +30,10 @@ func SendMessage(msg string) {
 	}
 	fmt.Printf("Message SID: %s\n", *response.Sid)
 }
+
+func init() {
+	err := godotenv.Load(".env")
+	if err != nil{
+		fmt.Printf("error loading .env: %s\n", err.Error())
+		os.Exit(1)
+	}
