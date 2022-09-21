@@ -24,4 +24,9 @@ func SendMessage(msg string) {
 	params.SetBody(msg)
 
 	response, err := client.ApiV2010.CreateMessage(&params)
+	if err != nil {
+		fmt.Printf("error creating and sending message: %s\n", err.Error())
+		return
+	}
+	fmt.Printf("Message SID: %s\n", *response.Sid)
 }
