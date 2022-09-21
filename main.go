@@ -38,3 +38,8 @@ func init() {
 		os.Exit(1)
 	}
 }
+
+accountSid = os.Getenv("ACCOUNT_SID")
+	authToken = os.Getenv("AUTH_TOKEN")
+	fromPhone = os.Getenv("FROM_PHONE")
+	toPhone = os.Getenv("TO_PHONE")
