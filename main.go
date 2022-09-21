@@ -21,4 +21,5 @@ func SendMessage(msg string) {
 	params := openapi.CreateMessageParams{}
 	params.SetTo(toPhone)
 	params.SetFrom(fromPhone)
+	params.SetBody(msg)
 }
