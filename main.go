@@ -49,3 +49,10 @@ func init() {
 	})
 }
 
+
+func main() {
+
+	msg := fmt.Sprintf(os.Getenv("MSG"), "James")
+	SendMessage(msg)
+	
+}
